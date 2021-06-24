@@ -31,11 +31,6 @@ InputIt find_if(InputIt first, InputIt last, UnaryPredicate p)
         onde = p(*pos);
     }
     return pos;
-    /*if (onde == true) {
-        return pos;
-    } else {
-        return last;
-    }*/
 }
 
 }
