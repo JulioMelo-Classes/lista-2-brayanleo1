@@ -14,7 +14,7 @@ namespace graal {
  * @tparam BidirIt iterator para o range
  *
  * @param first Ponteiro para o primeiro elemento da range
- * @param last Ponteiro para o segundo elemento da range
+ * @param last Ponteiro para a posição logo após o último elemento da range
  */
 template<class BidirIt>
 void reverse(BidirIt first, BidirIt last)

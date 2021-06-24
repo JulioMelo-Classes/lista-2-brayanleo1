@@ -11,13 +11,28 @@ using std::sort;
 namespace graal {
 
 /*! 
- * TODO: documentação no estilo doxygen
+ * @tparam InputIt iterator para o range
+ * 
+ * @param first Ponteiro para o primeiro elemento da range
+ * @param last Ponteiro para a posição logo após o último elemento da range
+ * @param d_first Ponteiro para o primeiro elemento da range cópia
+ * 
+ * @return Um ponteiro para a posição logo após o último elemento da range cópia
  */
 template<class InputIt>
 InputIt copy(InputIt first, InputIt last, InputIt d_first)
 {
-    // TODO
-    return first;
+
+    auto iterN = d_first;
+    auto iterO = first;
+
+    while(iterO != last) {
+        *iterN = *iterO;
+        ++iterN;
+        ++iterO;
+    }
+
+    return iterN;
 }
 
 }
