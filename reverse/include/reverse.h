@@ -11,12 +11,24 @@ using std::sort;
 namespace graal {
 
 /*! 
- * TODO: documentação no estilo doxygen
+ * @tparam BidirIt iterator para o range
+ *
+ * @param first Ponteiro para o primeiro elemento da range
+ * @param last Ponteiro para o segundo elemento da range
  */
 template<class BidirIt>
 void reverse(BidirIt first, BidirIt last)
 {
-    // TODO
+    auto i = first;
+    auto j = last - 1;
+    auto lp = i;
+    while(lp != j && i != j) {
+        lp = i;
+        std::swap(*i,*j);
+        ++i;
+        --j;
+    }
+    
 }
 
 }
