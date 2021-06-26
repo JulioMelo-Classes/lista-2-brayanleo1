@@ -18,7 +18,7 @@ namespace graal {
  * @param last Ponteiro para a posição logo após o último elemento da range
  * @param eq Função que verifica se dois valores em elementos diferentes são iguais
  * 
- * @return Iterator apontando para o último elemento da range modificada
+ * @return Iterator apontando para o elemento logo após o último da range modificada
  */
 template<class InputIt, class Equal>
 InputIt unique( InputIt first, InputIt last, Equal eq )
