@@ -12,7 +12,7 @@ namespace graal {
 
 /*! 
  * @tparam InputIt1 iterator para a primeira range
- * @tparam InputIt1 iterator para a segunda range
+ * @tparam InputIt2 iterator para a segunda range
  * @tparam Equal verifica se há uma igualdade entre dois elementos
  * 
  * @param first1 Ponteiro para o primeiro elemento da primeira range
