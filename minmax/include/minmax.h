@@ -23,6 +23,9 @@ namespace graal {
  * @return Um std::pair contendo o menor e maior elemento, nesta ordem
  *
  */
+ /*
+ 80%
+ */
 template <typename Itr, typename Compare >
 std::pair<Itr, Itr> minmax( Itr first, Itr last, Compare cmp )
 {
@@ -38,7 +41,7 @@ std::pair<Itr, Itr> minmax( Itr first, Itr last, Compare cmp )
             bool x = cmp(*ma, *pos);
             bool y = cmp(*pos, *me);
             
-            if (x == true || *ma == *pos) {
+            if (x == true || *ma == *pos) { //vc não pode usar os operadores de comparação nesta questão, como é um erro conceitual vou tirar 20%
                 ma = pos;
             }
 

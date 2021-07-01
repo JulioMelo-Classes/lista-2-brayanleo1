@@ -18,6 +18,9 @@ namespace graal {
  * @param last Ponteiro para a posição logo após o último elemento da range
  * @param cmp Compara dois elementos recebidos retornando um bool que diz respeito se o primeiro é menor que o segundo
  */
+ /*
+ blz
+ */
 template<class ForwardIt, class Comparison>
 void sort(ForwardIt first, ForwardIt last, Comparison cmp)
 {

@@ -20,6 +20,9 @@ namespace graal {
  * 
  * @return Iterator apontando para o elemento logo após o último da range modificada
  */
+ /*
+ 20% pela documentação
+ */
 template<class InputIt, class Equal>
 InputIt unique( InputIt first, InputIt last, Equal eq )
 {
@@ -47,7 +50,7 @@ InputIt unique( InputIt first, InputIt last, Equal eq )
         posBef = first;
         existe = false;
     }
-    return posLast;
+    return posLast; //? no caso vc está retornando sempre first... não vou considerar
 }
 
 }

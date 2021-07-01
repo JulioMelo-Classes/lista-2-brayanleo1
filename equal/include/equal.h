@@ -23,6 +23,9 @@ namespace graal {
  * 
  * @return boolean que confirma se todos os elementos na range cumprem o predicado p
  */
+ /*
+ 90% vc precisava documentar a versão sobrecarregada da função separadamente
+ */
 template<class InputIt1, class InputIt2, class Equal>
 bool equal(InputIt1 first1, InputIt1 last1, InputIt2 first2, Equal eq)
 {
@@ -30,7 +33,7 @@ bool equal(InputIt1 first1, InputIt1 last1, InputIt2 first2, Equal eq)
     auto pos1 = first1;
     auto pos2 = first2;
     existe = eq(*pos1,*pos2);
-    while(pos1 != last1 && existe == true) {
+    while(pos1 != last1 && existe == true) { //da mesma forma que all_any_none
         ++pos1;
         ++pos2;
         if(pos1 != last1) {

@@ -22,6 +22,9 @@ namespace graal {
  * 
  * @return Um ponteiro que será a primeira posição se existir algo que satisfaça a igualdade ou retornará a posição logo após a última caso não haja
  */
+ /*
+ ok
+ */
 template<class InputIt, class T, class Equal>
 InputIt find(InputIt first, InputIt last, const T& value, Equal eq)
 {

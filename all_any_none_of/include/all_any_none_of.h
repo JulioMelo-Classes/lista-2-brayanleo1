@@ -20,13 +20,16 @@ namespace graal {
  * 
  * @return boolean que confirma se todos os elementos na range cumprem o predicado p
  */
+ /*
+ blz!
+ */
 template<class InputIt, class UnaryPredicate>
 bool all_of(InputIt first, InputIt last, UnaryPredicate p)
 {
     bool existe = true;
     auto pos = first;
     existe = p(*pos);
-    while(pos != last && existe == true) {
+    while(pos != last && existe == true) { //ao invés de fazer existe == true, vc pode só testar while(pos != last && existe) ...
         ++pos;
         if(pos != last) {
             existe = p(*pos);

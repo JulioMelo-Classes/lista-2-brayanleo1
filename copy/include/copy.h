@@ -19,6 +19,9 @@ namespace graal {
  * 
  * @return Um ponteiro para a posição logo após o último elemento da range cópia
  */
+ /*
+ blz
+ */
 template<class InputIt>
 InputIt copy(InputIt first, InputIt last, InputIt d_first)
 {

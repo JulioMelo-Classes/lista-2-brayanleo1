@@ -20,13 +20,16 @@ namespace graal {
  * 
  * @return Um ponteiro que será a primeira posição se existir algo que satisfaça a condição ou retornará a posição logo após a última
  */
+ /*
+ ok!
+ */
 template<class InputIt, class UnaryPredicate>
 InputIt find_if(InputIt first, InputIt last, UnaryPredicate p)
 {
     bool onde = false;
     auto pos = first;
     onde = p(*pos);
-    while(pos != last && onde == false) {
+    while(pos != last && onde == false) {//aqui vc testa com !onde, tipo while(pos != last && !onde)
         ++pos;
         onde = p(*pos);
     }

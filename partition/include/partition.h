@@ -20,6 +20,9 @@ namespace graal {
  * 
  * @return Iterator apontando para o elemento logo após o último da range reordenada que satisfaz o predicado
  */
+ /*
+ blz
+ */
 template<class ForwardIt, class UnaryPredicate>
 ForwardIt partition(ForwardIt first, ForwardIt last, UnaryPredicate p)
 {
